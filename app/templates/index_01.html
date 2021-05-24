@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>FlaskBlog</title>
+</head>
+<body>
+   <h1>Welcome to my page!!</h1>
+   {% if posts %}
+	<h2>Hello {{ posts }}!</h2>
+	{% else %}
+	  <h2>Hello, World!</h2>
+	{% endif %}
+    
+</body>
+</html>
+
+ 
